@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #pre {
+        background: rgb(20, 20, 20)
+          url(https://i.pinimg.com/originals/c4/a3/e6/c4a3e669a2284456eeeac39fcd16b1eb.gif)
+          no-repeat center center;
+        background-position: 6ch;
+        color: azure;
+        text-decoration: underline;
+        font-weight: 900;
+        font-size: xxx-large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        z-index: 100;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="pre"></div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#pre", {
+        strings: ["DSA-Theater"],
+        typeSpeed: 50,
+      });
+    </script>
+    <script>
+      let loader = document.getElementById("pre");
+
+      window.addEventListener(
+        "load",
+        setTimeout(function () {
+          window.location.href = "/home.html";
+        }, 5000)
+      );
+    </script>
+  </body>
+</html>
